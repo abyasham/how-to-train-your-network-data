@@ -1,11 +1,11 @@
 Covering notes for ICS datasets
 
-4 folders contain ICS datasets from different real world ICS systems
+Folders contain ICS datasets from different real world ICS systems
 
 Directory structure:
 
 Original files - folder contains client pcap with dns removed
-radiflow.pcap.tar.gz - compress contains a folder continues pcap , radiflow's iSID is saving every pcap with 1 sec duration does are the pcaps that should match with timestamp with the security excel
+continuous pcap - contains continues pcap, radiflow's iSID is saving every pcap with 1 sec duration does are the pcaps that should match with timestamp with the security excel
 security_report.xlsx -  excel file contains our description of the pcaps run in our system . 
 alerts.zip - compressed contains:
 
@@ -14,7 +14,7 @@ alerts.zip - compressed contains:
                   2.  pcap folder of all events for each event is zipped , format <event_id>_<timestamp>.pcap we are saving 2 sec before occurrence and 2 sec after . 
         
                   
-How long is the data captured for for each system? 
+How long is the data captured for each system? 
 
 
 BSM									Factory A							Factory D	
@@ -37,7 +37,7 @@ pcap15.pcap	135.4
 pcap16.pcap	7433.71						
 pcap17.pcap	7397.64						
 
-
+use convert8.py to prepare the pcaps and convert it to clean csv files
 
 Are we sure CSV timestamps map directly back to Radiflow PCAP (and is it possible to get this to the second rather than minute?)
 >>> Yes , please use radflow pcaps from the events excel file and its matches with the timestamp.
